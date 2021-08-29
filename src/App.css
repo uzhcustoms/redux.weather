@@ -1,38 +1,90 @@
-.App {
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+  width: 20%;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+h1,
+h2 {
   text-align: center;
+  padding: 25px;
+  background-color: rgb(255, 213, 74);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label:last-of-type {
+  margin-top: 15px;
+}
+
+#city {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.item {
+  width: 15%;
+  align-self: center;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgb(255, 166, 0);
+  border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(247, 253, 159);
+  padding: 10px;
+  min-height: 300px;
+}
+.icons img {
+  padding-bottom: 20px;
+}
+
+.weatherCity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(253, 189, 52);
+  padding: 10px;
+  min-height: 300px;
+}
+
+.temp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(247, 253, 159);
+  padding: 10px;
+  min-height: 300px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temp h1 {
+  border-radius: 30px;
 }
